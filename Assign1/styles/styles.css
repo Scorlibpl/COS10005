@@ -1,0 +1,107 @@
+/*html element style*/
+html {
+	background-color:#4863A0;
+}
+
+/*body element style*/
+body {
+	background-color:#ADDFFF;
+}
+
+/*header part style*/
+h1 {
+	text-align		:center;
+	color			:black;
+	height			:2em;
+	line-height		:2em;
+	padding-left	:0.2em;
+}
+
+/*div section style*/
+div {
+	position:relative;
+}
+
+/*navigation element style*/
+#nav {
+	text-align		:center;
+	background-color:#79BAEC;
+	padding-top		:0.7em;
+	padding-bottom	:0.7em;
+}
+
+#nav li {
+	display:inline;
+}
+
+#nav a {
+	text-decoration :none;
+	padding			:0 30px;
+}
+
+/*link a element style*/
+a:hover {
+	background-color:#737CA1;
+}
+
+/*header element style*/
+h1:hover {
+	background-color:#79BAEC;
+}
+
+h2:hover {
+	background-color:#79BAEC;
+}
+
+h2 {
+	padding-left:0.3em;
+}
+
+/*paragraph element styling*/
+p {
+	padding-left:0.5em;
+}
+
+/*style for image*/
+img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*table element style*/
+table {
+	padding-bottom:0.5em;
+}
+
+/*image caption style*/
+figure figcaption {
+	text-align:center;
+	font-size:18px;
+}
+
+figcaption {
+	text-align:center;
+}
+
+/*footer element style*/
+footer {
+background-color:#ADDFFF;
+clear			:both;
+text-align		:center;
+color			:black;
+height			:2em;
+line-height		:2em;
+padding-left	:0.2em;
+padding-bottom	:0.2em;
+}
+
+/*row and column styling*/
+.row {
+	display:flex;
+}
+
+.column {
+	flex:50%;
+	padding:5px;
+}

@@ -1,0 +1,146 @@
+/*html element style*/
+@media screen and (min-width: 1024px) { 
+html {
+	background-color:#4863A0;
+}
+}
+
+/*body element style*/
+@media screen and (min-width: 1024px) { 
+body {
+	background-color:#ADDFFF;
+}
+}
+
+/*header part style*/
+@media screen and (max-width: 480px) {	
+h1 {
+	text-align		:center;
+	color			:black;
+	height			:2em;
+	line-height		:2em;
+	padding-left	:0.2em;
+}
+}
+
+/*div section style*/
+@media screen and (max-width: 480px) {	
+div {
+	position:relative;
+}
+}
+
+/*navigation element style*/
+@media screen and (max-width: 480px) {	
+#nav {
+	text-align		:center;
+	background-color:#79BAEC;
+	padding-top		:0.7em;
+	padding-bottom	:0.7em;
+}
+}
+
+@media screen and (max-width: 480px) {	
+#nav li {
+	display:inline;
+}
+}
+
+@media screen and (max-width: 480px) {	
+#nav a {
+	text-decoration :none;
+	padding			:0 30px;
+}
+}
+
+/*link a element style*/
+@media screen and (max-width: 480px) {	
+a:hover {
+	background-color:#737CA1;
+}
+}
+
+/*header element style*/
+@media screen and (max-width: 480px) {	
+h1:hover {
+	background-color:#79BAEC;
+}
+}
+
+@media screen and (max-width: 480px) {	
+h2:hover {
+	background-color:#79BAEC;
+}
+}
+
+@media screen and (max-width: 480px) {	
+h2 {
+	padding-left:0.3em;
+}
+}
+
+/*paragraph element styling*/
+@media screen and (max-width: 480px) {	
+p {
+	padding-left:0.5em;
+}
+}
+
+/*style for image*/
+@media screen and (max-width: 480px) {	
+img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+}
+
+/*table element style*/
+@media screen and (max-width: 480px) {	
+table {
+	padding-bottom:0.5em;
+}
+}
+
+/*image caption style*/
+@media screen and (max-width: 480px) {	
+figure figcaption {
+	text-align:center;
+	font-size:18px;
+}
+}
+
+
+@media screen and (max-width: 480px) {	
+figcaption {
+	text-align:center;
+}
+}
+
+/*footer element style*/
+@media screen and (max-width: 480px) {	
+footer {
+background-color:#ADDFFF;
+clear			:both;
+text-align		:center;
+color			:black;
+height			:2em;
+line-height		:2em;
+padding-left	:0.2em;
+padding-bottom	:0.2em;
+}
+}
+
+/*row and column styling*/
+@media screen and (max-width: 480px) {	
+.row {
+	display:flex;
+}
+}
+
+@media screen and (max-width: 480px) {	
+.column {
+	flex:50%;
+	padding:5px;
+}
+}
