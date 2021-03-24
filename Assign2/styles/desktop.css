@@ -1,0 +1,483 @@
+	/*BODY*/
+/*body element style*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*body element style*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*body element style*/
+body,
+html {
+  height: 30%;
+  min-height: 100vh;
+}
+
+/*body element style*/
+body {
+  display: flex;
+  flex-direction: column;
+   overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/*section element style*/
+section {
+	margin-top :10;
+}
+
+/*link color before visited*/
+a {
+	color:hotpink;
+}
+
+	/* TEXT */
+/*header font style*/
+h1,
+h2,
+h3,
+h2 a,
+nav li:first-child a {
+  font-family: 'Sunday';
+}
+
+/*header hover effect*/
+h1:hover {
+	background-color:white;
+}
+
+h2:hover {
+	background-color:black;
+}
+
+/*header font style*/
+h4,
+h5,
+p,
+a,
+ul,
+ol,
+li,
+input,
+label {
+  font-family: "Times New roman", times, serif;
+}
+
+/*header element style*/
+h2 {
+  color: white;
+  font-size: 1.8em;
+  margin-top: 25px;
+  padding-bottom:25px;
+  text-align:center;
+}
+
+/*header element positioning*/
+header h3 {
+	text-align:center;
+	color:#22;
+}
+
+header {
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 450px;
+  width: 100%;
+}
+
+
+header h1 {
+  color: #2e2c2c;
+  font-size: 4em;
+  line-height: 450px;
+  text-align: center;
+}
+
+/* paragraph positioning */
+p {
+	float:absolute;
+	color:white;
+}
+
+/* IMAGES */
+.image {
+	float:center;
+}
+
+/* NAVIGATION MENU BAR */
+
+/*nav element style*/
+nav {
+  display: block;
+  left: 0;
+  right: 0;
+  position: fixed;
+  transition: .2s;
+  width: 100%;
+  z-index: 2;
+  background-color:black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*nav element style*/
+nav ul {
+  display: block;
+  min-height: 50px;
+  line-height: 50px;
+  list-style: none;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 900px;
+}
+
+/*nav element style*/
+nav li {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  font-style:italic;
+  font-size:1.2em;
+}
+
+/*nav font style*/
+nav li:first-child {
+  float: left;
+}
+
+/*nav font style*/
+nav li:first-child a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*nav font style*/
+nav li:first-child a:after {
+  content: "Bruno's Pizzeria";
+  font-style:italic;
+}
+
+/*nav link style*/
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: .2s;
+}
+
+/*nav link hover style*/
+nav a:hover {
+	border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+}
+
+.selected {
+	border-bottom: 2px solid #fff;
+}
+
+.col half {
+	color:white;
+}
+
+/* MAIN */
+
+/*main element style*/
+.about,
+.menu,
+.order,
+.register,
+.features {
+  display: block;
+  flex: 1;
+  margin: 30px auto 0;
+  max-width: 90%;
+  padding-bottom: 40px;
+  width: 900px;
+}
+
+/*header feature style*/
+.features h2 {
+  margin-bottom: 30px;
+}
+
+/*menu element sizing*/
+.menu {
+  padding: 40px 0 80px;
+}
+
+.menu h2 {
+  margin-bottom: -40px;
+}
+
+.menu h3,
+.order h3 {
+  display: block;
+  margin: 40px 0 20px;
+}
+
+.menu p {
+  margin: 20px 0 10px;
+}
+
+/*main paragraph element style*/
+input,
+label,
+button {
+  color: #22;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 1.6em 0;
+}
+
+.about p,
+.menu p,
+.order p,
+.features p {
+	color:#22;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin: 1.6em 0;
+}
+
+.myClass {
+	color:white;
+}
+
+/*label element style*/
+label {
+  margin: 0;
+}
+
+	/*FOOTER*/
+footer {
+  color: white;
+  background-color: #A9A9A9;
+  background-image:url('../images/hf.jpg');
+  background-size:cover;
+}
+
+/*footer element style*/
+footer .footer2 {
+  background-color: black;
+  height: 60px;
+  text-align:center;
+  color:white;
+  padding-top:20px;
+}
+
+/*footer element style*/
+footer .row {
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 90%;
+  text-align: center;
+  width: 900px;
+  color:black;
+  margin-left:30%;
+}
+
+/*footer element style*/
+footer a {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  transition: .2s;
+}
+
+/*footer element style*/
+.col half 
+footer a:hover {
+  opacity: .6;
+}
+
+/*footer element style*/
+footer h3 {
+  margin-bottom: 1.3em;
+}
+
+/* GRID */
+
+/*class element styling*/
+.row .row {
+  margin:  0 -1.5em;
+}
+
+/*class element styling*/
+.col {
+  padding: 0  1.5em 0 0;
+}
+
+/*class element styling*/
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media only screen {
+  .col {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+  }
+}
+
+/*class element styling*/
+.half,
+.third,
+.full {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/*class element styling*/
+.about .half,
+form .half {
+  margin-top: 0;
+}
+
+/* FORMS PAGE CSS*/
+
+/*form element positioning*/
+form {
+  display: block;
+  margin: 40px auto;
+  max-width: 90%;
+  width: 900px;
+}
+
+/*form paragraph positionng*/
+.order p {
+  margin: 0;
+}
+
+/*label element style*/
+label {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+
+/*input element style*/
+input {
+  border: 1px solid #AAA;
+  border-radius: 0;
+  margin: 15px auto 30px;
+  padding: 5px;
+  width: 100%;
+}
+
+/*input element style*/
+input[type="submit"] {
+  background-color: #222;
+  border: 1px solid #222;
+  color: black;
+  height: 80px;
+  margin-top: 50px;
+  transition: .2s;
+  width: 100%;
+}
+
+/*input element style*/
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/*input element style*/
+input[type="radio"] {
+  display: none;
+  margin-bottom: 0px;
+  width: 0px;
+}
+
+/*input element style*/
+input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  width: initial;
+}
+
+/*input element style*/
+.button1 {
+  background-color: white;
+  border: 1px solid #222;
+  display: inline-block;
+  margin: 10px 5px 10px 0;
+  padding: 20px 10px;
+  text-align: center;
+  width: 47%;
+}
+
+/*input element style*/
+input[type="radio"]:checked + label,
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+/*form id element positioning*/
+#delivery-form,
+#payment-form {
+  display: none;
+}
+
+/*form header positioning*/
+form h2 {
+  margin-bottom: 50px;
+}
+
+#delivery:checked {
+  color: blue;
+}
+
+select {
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 75px;
+  margin: 10px 0;
+  width: 100%;
+
+}
+
+textarea[name="info"] {
+  height: 150px;
+}
+
+/* MEDIA CSS*/
+@media only screen and (min-width: 50em) {
+  .half {
+    width: 50%;
+  }
+
+  .third {
+    margin-top: 25px;
+    width: 33.3%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .bruno {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header h1 {
+    font-size: 2em;
+  }
+}
+
