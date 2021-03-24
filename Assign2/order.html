@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web development" />
+        <meta name="keywords"    content="Registration Form" />
+        <meta name="author"      content="Scorlib Lexrin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Website title -->
+        <title>Order Now - Bruno's Pizzeria</title>
+
+		<!-- Link to CSS and Javascript -->
+        <img rel="icon" type="image/png" src="images/h3.jpg" /> <!-- image link -->
+        <link rel="stylesheet" href="styles/desktop.css">
+        <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+		
+    </head>
+	
+	<!-- Main Body Content -->
+    <body>
+		<!-- Horizontal menu navigator -->
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html"></a></li>
+				<img src="images/pizza1.png" style="width:7%"/>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="selected"><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+
+		<!-- Header element -->
+        <header>
+            <h1>- ORDER HERE -</h1>
+        </header>
+
+		<!-- Section element -->
+        <section class="order">
+            <h2>Order Details</h2>
+			
+			<!-- Order form element -->
+            <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+                <div class="row">
+                    <div class="col half">
+                        <p>Pickup or Delivery?</p>
+
+                        <input type="radio" name="delivery_type" id="delivery_type_pickup" value="Pickup" onclick="javascript:order('delivery_type', '#delivery-form');">
+                        <label class="button1" for="delivery_type_pickup">Pickup</label>
+
+                        <input type="radio" name="delivery_type" id="delivery_type_delivery" value="Delivery" onclick="javascript:order('delivery_type', '#delivery-form');">
+                        <label class="button1" for="delivery_type_delivery">Delivery</label>
+
+                        <div id="delivery-form">
+                            <h2>Delivery Address</h2> <!-- Form 1 -->
+
+                            <p>Address</p>
+							<!-- Input type for delivery -->
+                            <input id="delivery_address" type="text" name="delivery_address" placeholder="60 A'beckett Street"/>
+
+                            <p>Suburb</p>
+                            <input id="delivery_suburb" type="text" name="delivery_suburb" placeholder="Auburn"/>
+
+                            <p>PostCode</p>
+                            <input id="delivery_postcode" type="text" name="delivery_postcode" placeholder="3000"/>
+                        </div>
+
+                        <h2>Billing Address</h2> <!-- Form 2 -->
+
+                        <p>Address</p>
+						<!-- Input type for delivery -->
+                        <input id="billing_address" type="text" name="billing_address" placeholder="60 A'Beckett Street"/>
+
+                        <p>Suburb</p>
+                        <input id="billing_suburb" type="text" name="billing_suburb" placeholder="Auburn"/>
+
+                        <p>PostCode</p>
+                        <input id="billing_postcode" type="text" name="billing_postcode" placeholder="3000"/>
+						
+						<!-- function if chekbox is checked then form will be autofilled -->
+						<input type="checkbox" id="same" name="same" onchange="addressFunction()" value="delivery_address"/>
+						<label for="same"><span class ="myClass">Same as delivery address</span></label><br>
+                    </div>
+
+                    <div class="col half">
+                        <p>Your Pizza Order</p>
+                        <textarea name="pizza_order" placeholder="1 American Buffalo Chicken"></textarea>
+
+                        <h2>Contact Information</h2>
+
+                        <p>Phone Number</p>
+						<!-- Input contact information -->
+                        <input id="phone" type="text" name="phone" placeholder="0412820795"/>
+
+                        <p>Email Address</p>
+                        <input id="email" type="email" name="email" placeholder="example@gmail.com"/>
+
+                        <p>Pay on Pickup or Online?</p>
+
+						<!-- Input type for pickup/online -->
+                        <input type="radio" name="payment_type" id="payment_type_pickup" value="Pickup" onclick="javascript:order('payment_type', '#payment-form');">
+                        <label class="button1" for="payment_type_pickup">Pickup</label>
+
+                        <input type="radio" name="payment_type" id="payment_type_online" value="Online" onclick="javascript:order('payment_type', '#payment-form');">
+                        <label class="button1" for="payment_type_online">Online</label>
+
+                        <div id="payment-form">
+							<!-- Input of payment information -->
+                            <h2>Payment Information</h2>
+
+                            <p>Full Name</p>
+                            <input id="full_name" type="text" name="full_name" placeholder="Your Name">
+							
+							<p>Payment Method</p>
+							<input id="paypickup" type="radio" name="rbRating" value="Pick Up" checked>
+							<input id="online" type="radio" name="rbRating" value="online">
+
+
+							<div id="hidden2" class="textinput">
+							<input id="visa" type="checkbox" name="cardtype" value="Visa" onclick="showMe('visanum')" />
+							<span class ="myClass">Visa</span>
+							<input id="mastercard" type="checkbox" name="cardtype" value="MasterCard" onclick="showMe('masternum')" />
+							<span class ="myClass">MasterCard</span>
+							<input id="americanexpress" type="checkbox" name="cardtype" value="American Express" onclick="showMe('americaninfo')" />
+							<span class ="myClass">American Express</span>
+							</div>
+							<br> <!-- Space -->
+							
+							<div>
+							<p>Credit Card Number</p>
+								<input id="creditCardNumber" type="text" name="cardnum" placeholder="0000 0000 0000 0000" disabled/>
+							</div>
+							
+							<!--Dropdown menu for expiry card date -->
+                            <p>Expiry</p>
+                            <select name="ccmon" id="ccmon">
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select name="ccyear" id="ccyear">
+                                <option value="16"> 2016</option>
+                                <option value="17"> 2017</option>
+                                <option value="18"> 2018</option>
+                                <option value="19"> 2019</option>
+                                <option value="20"> 2020</option>
+                                <option value="21"> 2021</option>
+                            </select>
+
+                            <p>CVV</p>
+                            <input id="cvv" type="text" name="cvv" placeholder="000"/>
+                        </div>
+                    </div>
+                    <div>
+						<!-- Submit and reset button -->
+                        <button class="button1" type="submit" value="Submit Order"/>Submit Order</button>
+                        <button class="button1" type="reset" value="Reset"/>Reset</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+		<!-- Footer element -->
+        <footer>
+            <div class="row">
+                <div class="col third">
+                    <h3>Message Us</h3>
+                    <a href="https://www.facebook.com/scorlib.perjuanganlexrin">
+  			 		<img src="images/fb3.png" style="width:25%">
+					</a>
+					<a href="https://www.instagram.com/scorlibplexrin/">
+					<img src="images/instagram.png" style="width:25%">
+					</a>
+					<a href="mailto:capricornboyz0501@gmail.com"/>
+					<img src="images/email.png" style="width:25%">
+					</a>
+				</div>
+                <div class="col third">
+                    <h3>Give Us A Call</h3>
+                    <i class="fa fa-phone" style="font-size:36px"></i><a href="tel:0421820795"> 0428 820 795
+					<img src="images/phone1.png" style="width:5%">
+					</a>
+                </div>
+            </div>
+			
+			<!-- Copyright notice -->
+            <div class="footer2">
+                   <p>© The Bruno's Pizzeria name, logos and related trade marks of Bruno's Pizzeria International, LTD 2020.</p>
+            </div>
+        </footer>
+		<!-- Javascript function for autofilled form -->
+		<script> 
+		function addressFunction() 
+		{ 
+			if (document.getElementById('same').checked) 
+			{ 
+				document.getElementById('billing_address').value=document.getElementById('delivery_address').value; 
+				document.getElementById('billing_suburb').value=document.getElementById('delivery_suburb').value 
+				document.getElementById('billing_postcode').value=document.getElementById('delivery_postcode').value 
+			} 
+			else
+			{	 
+				document.getElementById('billing_address').value=""; 
+				document.getElementById('billing_suburb').value=""; 
+				document.getElementById('billing_postcode').value="";
+			} 
+		} 
+		</script> 
+    </body>
+</html>

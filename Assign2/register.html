@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web development" />
+        <meta name="keywords"    content="Registration Form" />
+        <meta name="author"      content="Scorlib Lexrin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Website title -->
+        <title>Register - Bruno's Pizzeria</title>
+
+		<!-- Link to CSS and Javascript -->
+        <img rel="icon" type="image/png" src="images/p13.jpg" /> <!-- image link -->
+        <link rel="stylesheet" href="styles/desktop.css"/>
+        <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+
+	<!-- Main Body Content -->
+    <body>
+		<!-- Horizontal menu navigator -->
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html"></a></li>
+				<img src="images/pizza1.png" style="width:6.5%"/>
+                <li><a href="features.html">Features</a></li>
+                <li class="selected"><a href="register.html">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+
+		<!-- Header element -->
+        <header>
+            <h1>- GET IN TOUCH -</h1>
+        </header>
+
+		<!-- Section element -->
+        <section class="register">
+            <h2>Create new account</h2>
+
+			<!-- Form 1 Register -->
+            <form id="regform2" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+                <div class="row">
+                    <div class="col half">
+                        <h2>Contact Information</h2>
+
+                        <p>Username</p>
+                        <input id="username" type="text" name="username" placeholder="scor1010"/>
+
+                        <p>Password</p>
+                        <input id="password" type="password" name="password" placeholder="********"/>
+
+                        <p>Email Address</p>
+                        <input id="email" type="email" name="email" placeholder="example@gmail.com"/>
+
+                        <p>Any extra information</p>
+
+                        <textarea name="info" placeholder="Allergic to Gluten"></textarea>
+                    </div>
+
+                    <div class="col half">
+                        <h2>Personal Information</h2>
+
+                        <p>Full Name</p>
+                        <input id="full_name" type="text" name="full_name" placeholder="Scorlib Lexrin"/>
+
+                        <p>Gender</p>
+                        <select name="gender" id="gender">
+                            <option value="M">Male</option> <!--Option for drop down choices -->
+                            <option value="F">Female</option> <!--Option for drop down choices -->
+                            <option value="O">Other</option> <!--Option for drop down choices -->
+                        </select>
+
+                        <p>Favorite Pizzas?</p>
+                        <br> <!-- Space -->
+						
+						<!-- Input type checkbox -->
+                        <label><input type="checkbox" name="pizza" value="AMERICAN BUFFALO CHICKEN">
+							<span class ="myClass">AMERICAN BUFFALO CHICKEN</span></label><br>
+                        <label><input type="checkbox" name="pizza" value="ALFREDO CHICKEN MUSHROOM TRUFFLE">
+							<span class ="myClass">ALFREDO CHICKEN MUSHROOM TRUFFLE</span></label>
+                        <label><input type="checkbox" name="pizza" value="NEW! CREAMY BLACK PEPPER BEEF">
+							<span class ="myClass">CREAMY BLACK PEPPER BEEF</span></label>
+                        <label><input type="checkbox" name="pizza" value="NEW! CHEESE PEPPERONI SPECIAL">
+							<span class ="myClass">CHEESE PEPPERONI SPECIAL</span></label></br>
+                    <div> 
+						<!-- Submit value and reset button -->
+                        <button class="button1" type="submit" value="Submit Order"/>Submit Order</button>
+                        <button class="button1" type="reset" value="Reset"/>Reset</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+		  <!-- Footer element -->
+          <footer>
+            <div class="row">
+                <div class="col third">
+                    <h3>Message Us</h3>
+                    <a href="https://www.facebook.com/scorlib.perjuanganlexrin">
+  			 		<img src="images/fb3.png" style="width:25%">
+					</a>
+					<a href="https://www.instagram.com/scorlibplexrin/">
+					<img src="images/instagram.png" style="width:25%">
+					</a>
+					<a href="mailto:capricornboyz0501@gmail.com"/>
+					<img src="images/email.png" style="width:25%">
+					</a>
+				</div>
+                <div class="col third">
+                    <h3>Give Us A Call</h3>
+                    <i class="fa fa-phone" style="font-size:36px"></i><a href="tel:042820795"> 0421 820 795
+					<img src="images/phone1.png" style="width:5%">
+					</a>
+                </div>
+            </div>
+			
+			<!-- Copyright notice -->
+            <div class="footer2">
+                    <p>© The Bruno's Pizzeria name, logos and related trade marks of Bruno's Pizzeria International, LTD 2020.</p>
+            </div>
+        </footer>
+    </body>
+</html>
